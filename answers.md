@@ -9,8 +9,9 @@ sequenceDiagram
     participant server
 
     user->>server: POST REQUEST
-    server-->>: https response
-    
+    activate server
+    server-->>: http response
+    deactivate server
     
     user->>server: GET REQUEST
     activate server
