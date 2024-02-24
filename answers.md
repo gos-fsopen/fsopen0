@@ -10,8 +10,7 @@ sequenceDiagram
 
     user->>server: POST REQUEST
     server-->>: https response
-    activate server
-    deactivate server
+    
     
     user->>server: GET REQUEST
     activate server
